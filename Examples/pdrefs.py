@@ -17,7 +17,7 @@ def create_tfidf_test_df():
 
 
 def tfidf_df(df):
-    return (df.div(df.sum(axis=1), axis=0))*np.log10(len(df)/(df>0).sum())
+    return (df.div(df.sum(axis=1), axis=0))*np.log(len(df)/(df>0).sum())
 
 
 if __name__ == '__main__':
