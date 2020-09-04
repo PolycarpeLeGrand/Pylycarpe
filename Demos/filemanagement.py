@@ -4,6 +4,7 @@ from pathlib import Path
 
 def pathlib_demo():
     print('Starting pathlib demo!')
+    print(f'Blank Path initiated with Path(): {Path()}')
 
     # Creating Path object at curr directory
     curr_path = Path.cwd()
@@ -12,7 +13,7 @@ def pathlib_demo():
     # Creating Path object from string
     other_path = Path('C:/')
 
-a = Path('.')
+
 #print(a.cwd().rglob(f'*.py'))
 pathlib_demo()
 

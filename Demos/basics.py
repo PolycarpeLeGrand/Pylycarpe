@@ -11,6 +11,9 @@ def string_demos():
     escape_str = r'allo\ad\npoil'
     print(escape_str)
 
+    byte_litteral = b'bytes'
+    print(type(byte_litteral))
+
 
 if __name__ == '__main__':
     string_demos()
